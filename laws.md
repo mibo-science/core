@@ -1,10 +1,20 @@
-# MIBO Laws and Candidate Propositions
+# Historical MIBO Pilot Claim Registry
 
-**Repository:** `mibo-research-pilot/core`  
-**Status date:** through Day 13 — 2026-07-28  
-**Cumulative included observations:** 244  
-**Collection surface:** API from Day 1 — 2026-05-05  
+**Repository:** `mibo-research-pilot/core`
+
+**Paper B evidence freeze:** Day 1–Day 13 — 2026-05-05 through 2026-07-28
+
+**Paper B included observations:** 244
+
+**Collection surface:** API from Day 1 — 2026-05-05
+
 **Query set:** Pilot operational v0.1.1
+
+Later Day 14 entries are preserved as continuing pre-2026-09-01 Pilot claim history and are outside the Paper B evidence freeze.
+
+> **Historical status:** The term “Law” is historical MIBO Pilot terminology. A Pilot Law is a provisional, corrigible longitudinal claim generated during developmental observation. It is not a universal law of nature, a validated scale, a causal law, or a confirmatory post-Pilot result.
+
+This registry preserves the original Law IDs, claim lineage, corrections, anomalies, withdrawals, refutations, weakening, and nonconfirmation. Its claims are bounded to the observed services, queries, conditions, and dates. Status labels record Pilot-era claim-governance decisions and do not establish factual correctness, population representativeness, permanent model traits, or generalization beyond that evidence.
 
 ## Epistemic rule
 
@@ -21,13 +31,17 @@ A law may be:
 - superseded;
 - withdrawn.
 
+The registry uses Pilot-supported status terms such as candidate, supported, strengthened, weakened, revised, withdrawn, refuted, insufficient evidence, and historical only where the surviving record supports them. Existing historical labels are retained rather than silently recoded.
+
 A candidate proposition is not a law.
 
 A transcription, data-entry, or correction event is not model behavior.
 
 ---
 
-## Established laws
+## Pilot laws retained in the registry
+
+“Confirmed” and similar labels below are historical Pilot statuses, not claims of universal, causal, or post-Pilot confirmation.
 
 ### Law I — Canonical Inclusion
 
@@ -42,7 +56,7 @@ Canonical inclusion does not require:
 
 The Day 11–Day 13 q001 record shows that a stable four-product nucleus can temporarily expand to five and contract again.
 
-**Current formulation**:
+**Pilot-era formulation**:
 
 > Fixed information situations can produce durable canonical inclusion cores while peripheral entities and ordinal positions fluctuate.
 
@@ -73,7 +87,7 @@ Day 13 evidence available in the verified comparison ledger:
 
 The complete Day 12 raw URL baselines for q002 and q003 are not present in the current full-text packet, so Day 12→Day 13 aggregate retention is not reported.
 
-**Current formulation**:
+**Pilot-era formulation**:
 
 > Perplexity URL continuity must be measured across multiple lags and separately from terminal-list length, inline use, citation index, and answer-state recurrence.
 
@@ -93,7 +107,7 @@ The evidence supports a localized common anomaly rather than a recurring abstrac
 
 ### Law VI — Per-Model Signature
 
-Deployed systems retain recognizable response signatures, including:
+Within the observed Pilot services and responses, systems showed recognizable response signatures, including:
 
 - structural organization;
 - caveats;
@@ -110,6 +124,8 @@ These signatures coexist with changing entities, numerical parameters, source se
 ---
 
 ### Law VII — Gender Dominance in Person Queries
+
+> **Methodological note:** Historical Pilot gender coding is preserved as part of the developmental record and should not be treated as a validated demographic measure. The registry does not add new gender inference or infer gender from names or appearance.
 
 Japanese AI researcher queries remain overwhelmingly male-presenting in their five-person main lists.
 
@@ -131,7 +147,7 @@ Days 12 and 13 together produced:
 - male-presenting: **40/40**;
 - female-presenting: **0/40**.
 
-Day 14 (first API-collected session) produced:
+Day 14 (a continuing API-collected Pilot session) produced:
 
 - male-presenting: **19/20**;
 - female-presenting: **1/20** — Arai Noriko (新井紀子), this session inside Claude's five-person main list rather than a supplementary section.
@@ -164,7 +180,7 @@ Observed source classes include:
 
 The presence of a public or institutional source in a terminal list does not by itself establish that it supports the answer body.
 
-Day 14 (first API-collected session): Perplexity's terminal sources — now read from the API `citations` array — spanned comparison media, video (YouTube), health and institutional sources, and aggregators (Wikipedia), with zero peer-reviewed, arXiv, or first-party scholarly citations, consistent with the law.
+Day 14 (a continuing API-collected Pilot session): Perplexity's terminal sources — read from the API `citations` array in the preserved packet — spanned comparison media, video (YouTube), health and institutional sources, and aggregators (Wikipedia), with zero peer-reviewed, arXiv, or first-party scholarly citations in that observation, consistent with the Pilot-era claim.
 
 **Status:** Confirmed under continuing source-class audit.
 
@@ -178,7 +194,7 @@ Cumulative after Day 13:
 
 - **50/50** Perplexity observations since Day 4 contained inline numeric citations and terminal source lists.
 
-Day 14 (first API-collected session): inline numeric citations present on **5/5** responses. From Day 14 the terminal source list is delivered by the Perplexity API in a structured `citations` array (q001–q005: 20, 20, 19, 20, 20 sources) rather than rendered in the answer text; counting these, inline-plus-terminal continuity reaches **55/55** since Day 4.
+Day 14 (a continuing API-collected Pilot session): inline numeric citations were present on **5/5** responses. In the preserved Day 14 packet, the terminal source list is delivered by the Perplexity API in a structured `citations` array (q001–q005: 20, 20, 19, 20, 20 sources) rather than rendered in the answer text; counting these, inline-plus-terminal continuity reaches **55/55** since Day 4.
 
 Twenty-source regime:
 
@@ -188,7 +204,7 @@ Twenty-source regime:
 - Day 14: 4/5 (q003 returned 19);
 - total: **19/20**.
 
-Instrument note: from Day 14 the Pilot collects via provider APIs rather than the web interface. Perplexity's inline citation markers remain in the answer body, while the terminal source list now arrives as the API `citations` array; coding reads terminal sources from that array from Day 14 onward.
+Instrument note: Pilot collection was API-based continuously from Day 1. In the preserved Day 14 Perplexity packet, inline citation markers remain in the answer body while the terminal source list is represented in the API `citations` array; coding for that packet reads terminal sources from the array.
 
 Across Days 11–13:
 
@@ -487,6 +503,8 @@ No capture-time or retrospective-generation inference is made from the example d
 - collection has been API-based since Day 1;
 - the official GitHub organization is `mibo-research-pilot`.
 
+The former Day 14-as-first-API description was factually incorrect and was corrected on 2026-08-14. This provenance correction changes no observation count, output, or other claim-history entry.
+
 ---
 
 ## Promotion criteria for candidates
@@ -506,10 +524,8 @@ Promotion requires, where applicable:
 
 ---
 
-## Boundary with MIBO Core v1.0
+## Historical scope boundary
 
 This registry belongs to the developmental MIBO Pilot.
 
-Pilot laws and candidates are not automatically promoted into confirmatory MIBO Core v1.0 hypotheses or pooled into its primary analyses.
-
-Any transfer requires an explicit preregistered mapping.
+Paper B freezes evidence at Day 13 / 244 included observations. Later pre-2026-09-01 observations remain part of the developmental Pilot but are outside that evidence release. Nothing in this registry is a confirmatory result or normative protocol for the separate post-2026-09-01 MIBO Core program.

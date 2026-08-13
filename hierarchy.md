@@ -1,8 +1,20 @@
-# Field Hierarchy
+# Historical MIBO Pilot Field and Terminology Development
 
-This document defines the field hierarchy used by the Machine Information Behavior Observatory (MIBO).
+> **Status notice:** This document preserves conceptual and terminology development from the MIBO Pilot. It is a historical record, not the normative field hierarchy or organizational design of the separate post-2026-09-01 MIBO Core program. Pilot-era wording is retained where changing it would obscure provenance.
 
-MIBO is positioned as an observation facility within **Machine Information Behavioral Sciences**, a specialized field under the broader umbrella of **Machine Behavioral Sciences**.
+Current repository-level explanatory prose uses:
+
+- **MIBO — Machine Information Behavioral Observatory**;
+- **Machine Behavioral Sciences**;
+- **Machine Information Behavioral Sciences**;
+- **machine information behavior**;
+- **Longitudinal Machine Observation (LMO)**.
+
+Earlier wording below, including “Machine Information Behavior Observatory,” documents the Pilot's terminology development rather than a current normative naming rule.
+
+## Preserved Pilot-era field hierarchy
+
+The Pilot positioned MIBO as an observation facility within **Machine Information Behavioral Sciences**, a specialized field under the broader umbrella of **Machine Behavioral Sciences**.
 
 ```text
 Machine Behavioral Sciences
@@ -99,6 +111,10 @@ A basic LMO unit contains:
 - source-attribution or citation-like signals;
 - extracted entities, products, organizations, or domains;
 - notes on limitations and uncertainty.
+
+### Methodological-development note
+
+During the Pilot, LMO, the OPEN Principles, and re-observability were developing concepts rather than a fully validated measurement design. The OPEN Principles were articulated as **Observation**, **Parallelism**, **Embedded openness**, and **Non-stationarity**. Re-observability was developed as an epistemic and methodological objective; incomplete early request-parameter and raw-output preservation, the absence of independent within-cell replication, and the absence of multi-site replication limited its implementation during the Pilot and informed later formalization.
 
 ## 6. First research focus: source-attribution and citation-like behavior
 
