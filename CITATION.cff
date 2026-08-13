@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite the specific archived MIBO Pilot release and the associated Paper B when available."
+title: "MIBO Pilot Core"
+type: software
+authors:
+  - family-names: "Sasano"
+    given-names: "Kento"
+    affiliation: "Okayama University"
+repository-code: "https://github.com/mibo-research-pilot/core"
+license: "Apache-2.0"
+abstract: >-
+  Historical conceptual, methodological, and claim-development record of the
+  MIBO Pilot.

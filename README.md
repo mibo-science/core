@@ -1,307 +1,91 @@
-# MIBO — Machine Information Behavior Observatory
+# MIBO Pilot Core
 
-**Repository:** `mibo-research-pilot/core`
-
-**Japanese name:** 機械情報行動観測所  
-**Parent domain:** Machine Behavioral Sciences  
-**Specialized field:** Machine Information Behavioral Sciences  
-**Core methodology:** Longitudinal Machine Observation (LMO)  
-**Methodological constitution:** OPEN Principles  
-**Epistemic goal:** Re-observability  
-**Observation began:** 2026-05-05  
-**Collection surface:** API-based from Day 1  
-**Verified Pilot record:** Day 1–Day 13  
-**Verified cumulative observations:** 244
-
-MIBO is an independent, open, Japanese-origin research observatory for longitudinally documenting how deployed generative-AI services retrieve, select, rank, recommend, cite, omit, synthesize, refuse, revise, and transmit information across providers, languages, domains, interfaces, and time.
-
-MIBO studies observable service-level behavior under documented conditions. It does not infer human-like needs, intentions, consciousness, understanding, memory, or hidden causal mechanisms from outputs alone.
-
----
-
-## Repository role
-
-The `core` repository contains the shared conceptual and methodological foundation of MIBO:
-
-- canonical definitions;
-- field hierarchy and terminology;
-- the MIBO organizational structure;
-- the Longitudinal Machine Observation method family;
-- the OPEN Principles;
-- re-observability requirements;
-- Pilot claim-status governance;
-- the laws and candidate-proposition registry;
-- the boundary between the developmental Pilot and MIBO Core v1.0.
-
-Related repositories:
-
-- [`mibo-research-pilot/queries`](https://github.com/mibo-research-pilot/queries) — versioned Pilot queries and future fixed instruments;
-- [`mibo-research-pilot/reports`](https://github.com/mibo-research-pilot/reports) — API observation records, structured coding, source ledgers, corrections, and longitudinal reports.
-
----
-
-## Current program stage
-
-### MIBO Pilot — Developmental Observation Phase
-
-All observations before 1 September 2026 belong to the **MIBO Pilot**.
-
-The Pilot is exploratory and developmental. It is used for:
-
-- query and coding development;
-- longitudinal hypothesis generation;
-- model- and service-lineage tracking;
-- source and attribution analysis;
-- claim-management practice;
-- metadata and provenance design;
-- correction and withdrawal procedures;
-- feasibility and automation development;
-- historical documentation.
-
-Pilot “laws” are corrigible longitudinal findings. They are not universal laws of nature and are not automatically treated as confirmatory MIBO Core v1.0 results.
-
-The verified Pilot record currently covers:
+This repository preserves the historical conceptual, methodological, and claim-development record of the **MIBO Pilot**.
 
 | Boundary | Value |
 |---|---|
-| First observation | Day 1 — 2026-05-05 |
-| Latest verified observation | Day 13 — 2026-07-28 |
-| Included observations | 244 |
-| Collection surface | API from Day 1 |
-| Included systems | Gemini, GPT/ChatGPT, Claude, Perplexity |
-| Grok | Excluded from official Day 7–Day 13 analysis and counts |
-| Query set | Pilot operational v0.1.1 |
+| Repository | `mibo-research-pilot/core` |
+| Pilot period | Before 2026-09-01 |
+| Pilot began | 2026-05-05 |
+| Paper B evidence freeze | Day 1–Day 13 / 244 included observations |
+| Freeze dates | 2026-05-05 through 2026-07-28 |
+| Collection surface | API-based continuously from Day 1 |
 
-### MIBO Core v1.0
+**Historical-scope notice:** This repository is a historical MIBO Pilot repository. It preserves Pilot-era terminology, conceptual development, and claim history. Later MIBO program definitions may differ. Historical wording is retained where necessary for provenance and should not automatically be treated as the current normative definition of the post-Pilot program.
 
-The planned registered annual cycle begins on 1 September 2026.
+The repository name `core` is historical Pilot infrastructure. This repository is **not** the authoritative repository for the separate post-2026-09-01 program called MIBO Core, and it does not maintain that later program's protocol or organizational design.
 
-The release-candidate design defines MIBO Core as a survey-methodological generative-AI sentinel panel with:
+## Names and current explanatory terminology
 
-- persistent public-service lineage panel units;
-- version-controlled fixed query instruments;
-- synchronized survey waves;
-- parallel Live and Frozen observational lines where defensible;
-- independent within-cell replications;
-- multisite calibration;
-- generalizability-theoretic re-observability;
-- an international mirror-observation network;
-- preregistered claim, correction, and withdrawal procedures.
+- **English name:** MIBO — Machine Information Behavioral Observatory
+- **Japanese name:** 機械情報行動観測所
+- **Parent field:** Machine Behavioral Sciences
+- **Specialized field:** Machine Information Behavioral Sciences
+- **Object of observation:** machine information behavior
+- **Pilot method:** Longitudinal Machine Observation (LMO)
 
-Pilot records are not automatically pooled into the primary confirmatory analyses of MIBO Core v1.0.
+Historical files may use earlier forms such as “Machine Information Behavior Observatory.” Those forms document terminology development during the Pilot; the wording above is used in current repository-level explanations.
 
----
+## Repository role
 
-## MIBO organizational structure
+This repository provides historical conceptual and methodological context, not the primary raw observation dataset.
 
-MIBO has three formal organizational elements.
-
-```text
-MIBO
-├── MIBO Core
-├── MIBO Satellite
-└── MIBO Network
-```
-
-### MIBO Core
-
-MIBO Core is the common sentinel-panel program for observing public generative-AI information behavior.
-
-It maintains:
-
-- the shared service-lineage panel;
-- the fixed query instrument;
-- synchronized observation schedules;
-- common metadata and coding rules;
-- source and attribution measures;
-- claim-management procedures;
-- correction and withdrawal rules;
-- the primary longitudinal archive.
-
-### MIBO Satellite
-
-MIBO Satellite consists of separately scoped specialist and applied observation modules.
-
-Examples include:
-
-- MIBO-Okayama;
-- MIBO-NOW;
-- MIBO-Q;
-- MIBO Economy;
-- MIBO Politics;
-- MIBO Singularity.
-
-Satellite data are not automatically pooled with MIBO Core. Each module requires its own charter, scope, protocol, coding boundary, and claim boundary.
-
-### MIBO Network
-
-MIBO Network is the international replication and collaboration structure.
-
-It connects the coordinating program in Japan with independent mirror observations implemented through the Mirror Observatory Kit or equivalent documented protocols.
-
-The Network is not an additional substantive observation tier. It is the replication structure through which MIBO observations can be independently re-observed across regions, languages, institutions, and access conditions.
-
----
-
-## Field hierarchy
-
-```text
-Machine Behavioral Sciences
-└── Machine Information Behavioral Sciences
-    ├── Object: Machine information behavior
-    ├── Unit: Deployed answering configuration
-    ├── Method family: Longitudinal Machine Observation (LMO)
-    ├── Methodological constitution: OPEN Principles
-    ├── Epistemic goal: Re-observability
-    └── Infrastructure: Machine Information Behavior Observatory (MIBO)
-        ├── MIBO Core
-        ├── MIBO Satellite
-        └── MIBO Network
-```
-
-The formal definitions are maintained in [`canonical-definitions-v0.1.md`](./canonical-definitions-v0.1.md).
-
----
-
-## Core documents
-
-| File | Purpose |
+| File or repository | Historical Pilot role |
 |---|---|
-| [`README.md`](./README.md) | Program overview, repository role, current stage, and formal structure |
-| [`hierarchy.md`](./hierarchy.md) | Field hierarchy, organizational hierarchy, and preferred terminology |
-| [`canonical-definitions-v0.1.md`](./canonical-definitions-v0.1.md) | Frozen canonical definitions and wording rules |
-| [`laws.md`](./laws.md) | Pilot law and candidate-proposition registry through Day 13 |
+| [`README.md`](./README.md) | Orientation and repository boundary |
+| [`hierarchy.md`](./hierarchy.md) | Historical field and terminology development |
+| [`laws.md`](./laws.md) | Historical MIBO Pilot claim registry |
+| [`mibo-research-pilot/queries`](https://github.com/mibo-research-pilot/queries) | Exact versioned Pilot stimuli and operational query instrument |
+| [`mibo-research-pilot/reports`](https://github.com/mibo-research-pilot/reports) | Observation evidence, corrections, and provenance record |
 
----
+See [`paper-b/README.md`](./paper-b/README.md) for the Paper B boundary and [`AUDIT.md`](./AUDIT.md) for the repository audit.
 
-## Formal Pilot definition
+## Pilot and Paper B boundary
 
-> MIBO is an open longitudinal observatory that uses standardized, versioned elicitation through documented API conditions to record and compare the information behavior of deployed generative-AI services across synchronized observation waves.
+The MIBO Pilot began on 2026-05-05, with collection conducted through APIs continuously from Day 1.
 
----
+Paper B, *Operationalizing Longitudinal Machine Information Behavior: The Founding and Developmental Pilot of MIBO*, is a resource and methods paper. Its evidence release freezes Day 1–Day 13, covering 2026-05-05 through 2026-07-28 and 244 included observations.
 
-## Collection rule
+Paper B freezes evidence at Day 13 / 244 observations; later pre-2026-09-01 observations remain part of the developmental Pilot but are outside the Paper B evidence release. Day 13 is not the end of the whole Pilot.
 
-MIBO observations have been conducted through APIs continuously since Day 1 on 2026-05-05.
+## Pilot conceptual and methodological development
 
-API transport must be recorded separately from:
+The Pilot developed **Longitudinal Machine Observation (LMO)** as standardized, repeated elicitation and observation of deployed machine services under documented conditions. It treated outputs as observations of service-level behavior, not evidence of consciousness, intention, hidden mental states, or an unobserved causal mechanism.
 
-- orchestration mode;
-- scheduling automation;
-- record assembly;
-- human review;
-- correction status.
+The Pilot also developed the **OPEN Principles**:
 
-API use alone does not prove that orchestration or report assembly was automated.
+- **Observation** — record observable outputs and conditions;
+- **Parallelism** — use synchronized, comparable elicitation across services;
+- **Embedded openness** — preserve instruments, records, corrections, and limitations for inspection;
+- **Non-stationarity** — expect services, retrieval environments, and outputs to change over time.
 
-Each observation should preserve, where available:
+**Re-observability** was an epistemic and methodological objective: another investigator should be able to understand and, where conditions permit, repeat a documented observation. The Pilot did not fully implement later formal measurement requirements. It lacked independent within-cell replication, complete early request-parameter and raw-output preservation, and multi-site replication. These limitations informed later methodological formalization but do not retroactively invalidate the preserved Pilot observations.
 
-- provider and service lineage;
-- exact model identifier or recorded model label;
-- API request and response timestamps;
-- query-set version;
-- request parameters;
-- locale and access tier;
-- raw response;
-- normalized response hash;
-- source URLs and normalized URLs;
-- coding version;
-- review and correction status.
+## Historical claim governance
 
----
+The Pilot used the term “law” for provisional, corrigible longitudinal claims. In this repository, that term is historical. A Pilot Law is not a universal law of nature, a validated scale, a causal law, a permanent model trait, or a confirmatory post-Pilot result.
 
-## Claim management
+The registry preserves support, strengthening, weakening, revision, withdrawal, refutation, anomaly, correction, nonconfirmation, and provenance limitations. Recurrence alone does not establish factual correctness, population representativeness, or generalization beyond the observed services, queries, conditions, and dates.
 
-MIBO records:
+Historical Pilot gender coding is preserved as part of the developmental record and should not be treated as a validated demographic measure. This repository does not add new gender inference or infer gender from names or appearance.
 
-- confirmation;
-- refinement;
-- strengthening;
-- weakening;
-- bounded support;
-- supersession;
-- withdrawal;
-- refutation;
-- anomaly;
-- correction;
-- provenance limitation;
-- nonreplication.
+See [`laws.md`](./laws.md) for the complete historical registry.
 
-Retraction, correction, and withdrawal are part of the method.
+## Scope limits
 
-A candidate proposition is not promoted solely because it appears repeatedly in retrospective inspection. Promotion requires a frozen operational definition, prospective testing where applicable, repeated survival, provenance validation, and explicit contradiction checks.
+This repository does not claim conceptual priority or a “world's first.” It does not contain or define:
 
-See [`laws.md`](./laws.md).
+- the normative post-2026-09-01 MIBO Core protocol;
+- a preregistered later-program design;
+- later Frozen–Live implementation details;
+- `k=10` replication rules;
+- later G-theory certification rules;
+- Satellite or Network architecture.
 
----
+Historical claims must be read within the observed Pilot services, fixed queries, dates, access conditions, and preservation limits. Repeated appearance is not proof of a universal mechanism or of factual correctness.
 
-## Current established findings after Day 13
+## Licensing and citation
 
-| Law | Current formulation | Status |
-|---|---|---|
-| I | Fixed queries can produce durable canonical inclusion cores while peripheral selections and ordinal positions fluctuate. | Confirmed with refinements |
-| II | Perplexity URL continuity is multi-lag and source-regime-sensitive; normalized URLs, terminal-list length, and inline-used sources must be measured separately. | Continuing |
-| III | The coordinated Day 2 deviation was a localized anomaly rather than a recurring cycle. | Confirmed |
-| VI | Deployed systems retain recognizable response signatures even when entities and parameters change. | Confirmed |
-| VII | Japanese-AI-researcher main lists remain overwhelmingly male-presenting: 215/220 after Day 13. | Strengthened |
-| VIII | The Pilot has not established stable direct academic grounding; public, institutional, technical, and commercial web sources appear unevenly. | Confirmed with continuing source-class audit |
-| IX | Perplexity used inline numeric citations plus terminal source lists in 50/50 observations since Day 4; the twenty-source regime persisted in 15/15 observations across Days 11–13. | Confirmed / continuing |
+The repository's researcher-authored conceptual text, documentation, and validation script are distributed under the [Apache License 2.0](./LICENSE). No different repository-wide license is asserted here, and this repository does not grant or invent rights over provider-generated outputs held elsewhere.
 
-Withdrawn Laws IV, V, and X remain in the historical registry. P12 remains refuted.
-
----
-
-## What MIBO is not
-
-MIBO is not:
-
-- a GEO, AIO, or LLMO consultancy;
-- a service for manipulating model recommendations;
-- a one-time benchmark or leaderboard;
-- a single overall score of intelligence, quality, or safety;
-- a model-internals interpretability project;
-- an assumption that generated source labels equal scholarly citations;
-- a claim that public service behavior reveals a hidden model update or causal mechanism;
-- a claim that machines possess human-like information needs or consciousness;
-- a project that protects attractive claims from later correction or withdrawal.
-
----
-
-## Naming rules
-
-Use:
-
-- MIBO;
-- MIBO Core;
-- MIBO Satellite;
-- MIBO Network;
-- MIBO Mirror;
-- Mirror Observatory Kit;
-- Machine Behavioral Sciences;
-- Machine Information Behavioral Sciences;
-- machine information behavior;
-- Longitudinal Machine Observation;
-- deployed answering configuration;
-- re-observability.
-
-Avoid:
-
-- “MIBO Observatory,” because the O in MIBO already means Observatory;
-- treating MIBO Network as a third substantive observation tier;
-- calling Satellite modules part of the Core dataset without a pooling rule;
-- “the model knows,” “believes,” “remembers,” or “forgot” as literal internal-state claims;
-- “first,” “only,” or “unprecedented” without defensible priority evidence.
-
----
-
-## Licensing
-
-- Observation data and query sets: CC0-1.0 unless otherwise stated.
-- Code and software documentation: Apache-2.0 unless otherwise stated.
-- Raw model outputs remain subject to applicable provider terms.
-
----
-
-## Mission
-
-> Observation compounds. Today’s record becomes tomorrow’s irreplaceable archive.
+Citation metadata are provided in [`CITATION.cff`](./CITATION.cff). Cite a specific archived release of this repository and the associated Paper B when a public Paper B identifier becomes available.
